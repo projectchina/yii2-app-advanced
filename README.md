@@ -6,16 +6,28 @@
     <br>
 </p>
 
-本地化调整
---------
+## 起步
+
+```shell
+cd vagrant/config
+cp vagrant-local.example.yml vagrant-local.yml
+```
+
+设置 github access token
+
+```shell
+cd ../../
+vagrant up
+```
+
+## 本地化调整
 
 1. 更换 composer 仓库地址为中国镜像源
 2. 更换 bower 包为 npm 包
 
 项目依赖 Node.js,建议安装 yarn
 
-Doc
----
+## Doc
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.

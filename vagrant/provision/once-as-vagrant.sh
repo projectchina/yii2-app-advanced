@@ -12,7 +12,14 @@ info "Provision-script user: `whoami`"
 
 info "Configure composer"
 composer config --global github-oauth.github.com ${github_token}
+composer config -g repo.packagist composer https://packagist.laravel-china.org
 echo "Done!"
+
+info "配置 npm 镜像"
+npm set registry https://registry.npm.taobao.org/
+npm set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+npm set phantomjs_cdnurl https://npm.taobao.org/mirrors/phantomjs/
+npm set electron_mirror https://npm.taobao.org/mirrors/electron/
 
 info "Install project dependencies"
 cd /app
